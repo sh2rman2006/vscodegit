@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+.but{
+    width: 100px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    margin: 2px;
+}
+.chisla{
+    background-color: rgb(80, 72, 72);
+    color: white;
+}
+.operations{
+    background-color: orange;
+}
+.dark{
+    background-color: black;
+    color: black;
+}
