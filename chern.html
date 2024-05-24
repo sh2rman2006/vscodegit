@@ -4,39 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="scripts/scripts.js" defer></script>
-    <title>Document</title>
 </head>
 
 <body>
-    <main>
-        <p id="result"></p>
-        <div>
-            <button class="but chisla" id="one">1</button>
-            <button class="but chisla" id="two">2</button>
-            <button class="but chisla" id="three">3</button>
-            <button class="but operations" id="plus">+</button>
+    <article class="calculator">
+        <div class="output">
+            <p id="results">123+345</p>
         </div>
-        <div>
-            <button class="but chisla" id="four">4</button>
-            <button class="but chisla" id="five">5</button>
-            <button class="but chisla" id="six">6</button>
-            <button class="but operations" id="minus">-</button>
+        <div class="string one">
+            <button class="btn opp" id="AC">AC</button>
+            <button class="btn opp" id="DEL">DEL</button>
         </div>
-        <div>
-            <button class="but chisla" id="seven">7</button>
-            <button class="but chisla" id="eight">8</button>
-            <button class="but chisla" id="nine">9</button>
-            <button class="but operations" id="ymn">*</button>
+        <div class="string two">
+            <button class="btn num" id="num7">7</button>
+            <button class="btn num" id="num8">8</button>
+            <button class="btn num" id="num9">9</button>
+            <button class="btn oper">/</button>
         </div>
-        <div>
-            <button class="but operations" id="clean">c</button>
-            <button class="but chisla" id="zero">0</button>
-            <button class="but operations" id="ravno">=</button>
-            <button class="but operations" id="del">/</button>
+        <div class="string three">
+            <button class="btn num" id="num4">4</button>
+            <button class="btn num" id="num5">5</button>
+            <button class="btn num" id="num6">6</button>
+            <button class="btn oper">*</button>
         </div>
-    </main>
+        <div class="string four">
+            <button class="btn num" id="num3">3</button>
+            <button class="btn num" id="num2">2</button>
+            <button class="btn num" id="num1">1</button>
+            <button class="btn oper">-</button>
+        </div>
+        <div class="string five">
+            <button class="btn num" id="num0">0</button>
+            <button class="btn num">.</button>
+            <button class="btn num">=</button>
+            <button class="btn oper">+</button>
+        </div>
+    </article>
 
 </body>
 
