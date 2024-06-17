@@ -1,11 +1,16 @@
-let openNode = document.querySelector(`#open`);
-let closeNode = document.querySelector(`#close`);
-let modal = document.querySelector(`.modal`);
-
-openNode.addEventListener(`click`, function () {
-  modal.classList.remove(`d-none`);
+let openButton = document.querySelector(`.btn-primary`);
+openButton.addEventListener(`click`, function () {
+  modalWind.classList.remove(`d-none`);
 });
 
-closeNode.addEventListener(`click`, function () {
-  modal.classList.add(`d-none`);
+let modalWind = document.querySelector(`.modalWind`);
+let modalBox = document.querySelector(`.modal__box`);
+modalWind.addEventListener(`click`, function (evt) {
+  let node = evt.target;
+  if (
+    node.classList.contains(`btn-close`) ||
+    node.classList.contains(`modalWind`)
+  ) {
+    modalWind.classList.add(`d-none`);
+  }
 });

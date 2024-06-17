@@ -1,35 +1,33 @@
-body {
+body{
   margin: 0;
 }
-.container {
-  display: flex;
-  margin: 5px 0;
-}
-.container h2 {
-  flex-grow: 1;
-}
-#close {
-  flex-basis: 50px;
-}
-
-.modal {
+.modalWind{
+  overflow-y: auto;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  background-color: rgba(0,0,0,.6);
   display: grid;
-  align-items: center;
   justify-content: center;
-  overflow-y: auto;
+  align-items: center;
 }
-.modal__box {
+.modal__box{
+  z-index: 1;
+  background-color: white;
   border-radius: 20px;
   max-width: 500px;
   padding: 45px;
-  z-index: 1;
-  background-color: white;
   margin: 30px 15px;
+}
+.modal_header{
+  display: flex;
+}
+.modal_header h2{
+  flex-grow: 1;
+}
+.modal_header button{
+  flex-basis: 58px;
 }
