@@ -1,0 +1,21 @@
+/*! ::BEFORE AND ::AFTER */
+.__before_and_after h2 {
+  position: relative;
+  /* относительно чего бдует position absolut */
+}
+.__before_and_after h2::before {
+  content: "";
+  /*content- по умолчанию inline  */
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+  /* создал линию относительно h2 */
+}
+.__before_and_after h2:hover::before {
+  width: 100%;
+}
+
